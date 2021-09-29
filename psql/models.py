@@ -12,3 +12,6 @@ class Worker(models.Model):
     class Meta:
         verbose_name = 'worker'
         verbose_name_plural = 'workers'
+
+    def __str__(self):
+        return self.fio
